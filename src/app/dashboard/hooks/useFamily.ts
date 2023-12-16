@@ -30,5 +30,17 @@ export default function useFamily() {
     }
   };
 
-  return { myFamilies }
+  const familyAdd = () => {
+    console.log('Levantar popup para agregar una nueva familia');
+  };
+
+  const familyEdit = (familyIndex: number) => {
+    console.log('Levantar popup para editar una familia');
+  };
+
+  const familyDelete = (familyIndex: number) => {
+    console.log('Levantar popup para confirmar la eliminación de una familia');
+  };
+
+  return { myFamilies, familyAdd, familyEdit, familyDelete }
 }

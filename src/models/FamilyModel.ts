@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 export interface IFamily {
+  _id: string;
   name: string;
 }
 
